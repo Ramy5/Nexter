@@ -250,8 +250,36 @@ body {
   font-style: italic; }
 
 .footer {
-  background-color: palevioletred;
-  grid-column: full-start / full-end; }
+  background-color: #101d2c;
+  grid-column: full-start / full-end;
+  padding: 8rem; }
+  .footer__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    align-items: center; }
+  .footer__link:link, .footer__link:visited {
+    color: #f9f7f6;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    transition: all 0.3s;
+    padding: 1.5rem;
+    display: block; }
+  .footer__link:hover, .footer__link:active {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-3px); }
+  .footer .copyright {
+    margin-top: 6rem;
+    font-size: 1.6rem;
+    color: #aaa;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
 
 .container {
   display: grid;
