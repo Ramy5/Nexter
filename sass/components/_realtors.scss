@@ -1,4 +1,29 @@
 .realtors {
-  background-color: cyan;
+  background-color: $color-secondary;
   grid-column: col-start 7 / full-end;
+  padding: 3rem;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  row-gap: 2rem;
+  justify-items: center;
+
+  &__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+    gap: 5vh 2rem;
+  }
+
+  &__img {
+    width: 7rem;
+    border-radius: 50%;
+  }
+
+  &__sold {
+    font-size: 1.2rem;
+    color: $color-grey-light-2;
+    transform: translateY(-0.5rem);
+  }
 }
