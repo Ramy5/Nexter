@@ -17,6 +17,14 @@
   justify-content: center;
   row-gap: 1.5rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1 / -1;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 4rem;
+  }
+
   &__logo {
     height: 3rem;
     justify-self: center;
@@ -50,6 +58,12 @@
     column-gap: 2rem;
     align-items: center;
     justify-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: repeat(2, minmax(max-content, 1fr));
+      gap: 4rem;
+      justify-items: center;
+    }
 
     img {
       max-height: 2.5rem;
